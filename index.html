@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeForward - Empowering Children's Future</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .stat-counter { transition: all 2s ease-out; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E94E97',
+                        secondary: '#FF6B35'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <a href="#" class="flex items-center gap-2">
+                    <div class="h-8">
+                        <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- City skyline -->
+                            <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#E94E97" stroke-width="8" fill="none"/>
+                            <!-- Text -->
+                            <text x="320" y="65" font-family="Arial" font-size="40" fill="#FF6B35" font-weight="bold">სიკეთის ქალაქი</text>
+                            <!-- Plus sign -->
+                            <text x="470" y="65" font-family="Arial" font-size="45" fill="#000000" font-weight="bold">+</text>
+                        </svg>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="about-us.html" class="text-gray-700 hover:text-primary transition-colors">About Us</a>
+                    <a href="stories.html" class="text-gray-700 hover:text-primary transition-colors">Stories</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                
+                <a href="donate.html" class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button">
+                    Donate Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-[72px]">
+        <section class="relative h-[600px] flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=A%20heartwarming%20scene%20of%20diverse%20children%20learning%20and%20playing%20together%20in%20a%20bright%2C%20modern%20classroom%20setting.%20The%20image%20shows%20natural%20light%20streaming%20through%20windows%2C%20creating%20a%20hopeful%20atmosphere.%20The%20left%20side%20has%20a%20clean%2C%20gradient%20background%20that%20smoothly%20transitions%20into%20the%20scene%2C%20perfect%20for%20text%20overlay.%20High-end%20photography%20style%2C%20soft%20natural%20lighting%2C%20positive%20emotional%20impact&width=1920&height=600&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/95 to-transparent"></div>
+            <div class="container mx-auto px-6 relative">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold text-gray-900 mb-6">Empowering Children to Build a Brighter Tomorrow</h1>
+                    <p class="text-xl text-gray-700 mb-8">Together, we've helped over 50,000 children access education, healthcare, and opportunities for a better future. Join us in making a difference.</p>
+                    <div class="flex gap-4">
+                        <a href="donate.html" class="px-8 py-3 bg-primary text-white text-lg hover:bg-primary/90 transition-colors !rounded-button inline-block">
+                            Make a Donation
+                        </a>
+                        <button class="px-8 py-3 bg-white text-primary border border-primary text-lg hover:bg-primary/5 transition-colors !rounded-button">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-heart-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">50,000+</h3>
+                        <p class="text-gray-600">Children supported through our educational programs across 25 countries</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-school-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">200+</h3>
+                        <p class="text-gray-600">Schools built and renovated to provide safe learning environments</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-team-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">15,000+</h3>
+                        <p class="text-gray-600">Dedicated volunteers working globally to make a difference</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Success Stories</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Every child deserves a chance to shine. Here are some of the inspiring stories of children whose lives have been transformed through our programs.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20portrait%20of%20a%20happy%20African%20school%20girl%20in%20uniform%2C%20studying%20at%20a%20desk%20with%20books%20and%20supplies.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=2&orientation=landscape" alt="Success Story 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Sarah's Journey</h3>
+                            <p class="text-gray-600 mb-4">From struggling to access education to becoming top of her class, Sarah's determination inspired her entire community.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20young%20Asian%20boy%20in%20a%20classroom%20setting%2C%20engaged%20in%20a%20science%20experiment%20with%20a%20bright%20smile.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=3&orientation=landscape" alt="Success Story 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Miguel's Dream</h3>
+                            <p class="text-gray-600 mb-4">Through our STEM program, Miguel discovered his passion for science and is now pursuing his dream of becoming an engineer.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20group%20of%20diverse%20children%20working%20together%20on%20an%20art%20project%2C%20showing%20collaboration%20and%20creativity.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=4&orientation=landscape" alt="Success Story 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Community Impact</h3>
+                            <p class="text-gray-600 mb-4">How our after-school programs transformed an entire neighborhood and created lasting change.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-bold mb-6 text-primary">Real Change Starts With You</h2>
+                        <p class="text-gray-700 mb-6">Every პატარა ქმედება დიდ ცვლილებას ქმნის. გახდი სიკეთის ქალაქის ოჯახის ნაწილი და დაეხმარე ბავშვებს უკეთესი მომავლის შექმნაში:</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <i class="ri-hand-heart-line text-2xl text-primary"></i>
+                                <span class="text-lg text-gray-800">გახდი რეგულარული დონორი და უზრუნველყავი ბავშვის განათლება</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="ri-megaphone-line text-2xl text-primary"></i>
+                                <span class="text-lg text-gray-800">გაავრცელე ჩვენი ამბავი სოციალურ ქსელებში</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="ri-group-line text-2xl text-primary"></i>
+                                <span class="text-lg text-gray-800">მოიწვიე მეგობრები და შექმენი სიკეთის გუნდი</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="ri-lightbulb-flash-line text-2xl text-primary"></i>
+                                <span class="text-lg text-gray-800">შეიტანე შენი იდეა ან პროექტი ბავშვების დასახმარებლად</span>
+                            </div>
+                        </div>
+                        <a href="donate.html" class="mt-8 inline-block px-8 py-3 bg-primary text-white text-lg font-semibold rounded-button shadow hover:bg-primary/90 transition-colors">დაიწყე ცვლილება</a>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="https://readdy.ai/api/search-image?query=Smiling%20children%20holding%20hands%20in%20a%20circle%20outdoors%2C%20sunny%20day%2C%20community%20and%20hope&width=500&height=350" alt="Smiling children together" class="rounded-lg shadow-md w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="#" class="flex items-center gap-2 mb-4">
+                        <div class="h-8">
+                            <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- City skyline -->
+                                <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                                <!-- Text -->
+                                <text x="320" y="65" font-family="Arial" font-size="40" fill="#FFFFFF" font-weight="bold">სიკეთის ქალაქი</text>
+                                <!-- Plus sign -->
+                                <text x="470" y="65" font-family="Arial" font-size="45" fill="#FFFFFF" font-weight="bold">+</text>
+                            </svg>
+                        </div>
+                    </a>
+                    <p class="text-gray-400">Empowering children worldwide through education, healthcare, and opportunity.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="stories.html" class="text-gray-400 hover:text-white transition-colors">Stories</a></li>
+                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest news and impact stories.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 rounded-button text-white placeholder-gray-400 border-none">
+                        <button class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 HopeForward. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chart = echarts.init(document.getElementById('impactChart'));
+            const option = {
+                animation: false,
+                color: ['rgba(87, 181, 231, 1)'],
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    textStyle: { color: '#1f2937' }
+                },
+                grid: {
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    left: 0,
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2021', '2022', '2023', '2024', '2025'],
+                    axisLine: { lineStyle: { color: '#d1d5db' } },
+                    axisLabel: { color: '#1f2937' }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: { show: false },
+                    axisLabel: { color: '#1f2937' },
+                    splitLine: { lineStyle: { color: '#f3f4f6' } }
+                },
+                series: [{
+                    data: [12000, 25000, 35000, 45000, 50000],
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'none',
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgba(87, 181, 231, 0.2)'
+                        }, {
+                            offset: 1,
+                            color: 'rgba(87, 181, 231, 0)'
+                        }])
+                    }
+                }]
+            };
+            chart.setOption(option);
+
+            window.addEventListener('resize', function() {
+                chart.resize();
+            });
+        });
+    </script>
+</body>
+</html>

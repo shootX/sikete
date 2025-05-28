@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - სიკეთის ქალაქი +</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E94E97',
+                        secondary: '#FF6B35'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="h-8">
+                        <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#E94E97" stroke-width="8" fill="none"/>
+                            <text x="320" y="65" font-family="Arial" font-size="40" fill="#FF6B35" font-weight="bold">სიკეთის ქალაქი</text>
+                            <text x="470" y="65" font-family="Arial" font-size="45" fill="#000000" font-weight="bold">+</text>
+                        </svg>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="about-us.html" class="text-gray-700 hover:text-primary transition-colors">About Us</a>
+                    <a href="stories.html" class="text-gray-700 hover:text-primary transition-colors">Stories</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="donate.html" class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button">
+                    Donate Now
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-[72px]">
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl font-bold mb-4">Inspiring Stories of Hope</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Discover the transformative journeys of children whose lives have been changed through education, support, and opportunity.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20portrait%20of%20a%20happy%20African%20school%20girl%20in%20uniform%2C%20studying%20at%20a%20desk%20with%20books%20and%20supplies.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=2&orientation=landscape" alt="Story 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 25, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>Education</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Sarah's Journey to Academic Excellence</h3>
+                            <p class="text-gray-600 mb-4">From struggling to access education to becoming top of her class, Sarah's determination inspired her entire community.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20young%20Asian%20boy%20in%20a%20classroom%20setting%2C%20engaged%20in%20a%20science%20experiment%20with%20a%20bright%20smile.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=3&orientation=landscape" alt="Story 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 20, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>STEM</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Miguel's Path to Engineering Dreams</h3>
+                            <p class="text-gray-600 mb-4">Through our STEM program, Miguel discovered his passion for science and is now pursuing his dream of becoming an engineer.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20group%20of%20diverse%20children%20working%20together%20on%20an%20art%20project%2C%20showing%20collaboration%20and%20creativity.%20Natural%20lighting%2C%20authentic%20expression%2C%20hopeful%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=4&orientation=landscape" alt="Story 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 15, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>Community</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Building a Stronger Community Together</h3>
+                            <p class="text-gray-600 mb-4">How our after-school programs transformed an entire neighborhood and created lasting change for generations to come.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20group%20of%20children%20in%20a%20computer%20lab%2C%20learning%20coding%20and%20technology%20with%20enthusiasm.%20Bright%2C%20modern%20setting%20with%20natural%20light.%20Professional%20photography%20style&width=400&height=300&seq=5&orientation=landscape" alt="Story 4" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 10, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>Technology</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Digital Learning Revolution</h3>
+                            <p class="text-gray-600 mb-4">Our new computer lab program is empowering students with digital skills for the future workplace.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=A%20young%20girl%20playing%20violin%20in%20a%20music%20room%2C%20showing%20joy%20and%20concentration.%20Warm%2C%20inspiring%20atmosphere.%20Professional%20photography%20style&width=400&height=300&seq=6&orientation=landscape" alt="Story 5" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 5, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>Arts</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Music that Changes Lives</h3>
+                            <p class="text-gray-600 mb-4">Maria's journey from her first violin lesson to performing at the national youth orchestra.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=Children%20working%20in%20a%20community%20garden%2C%20planting%20vegetables%20and%20learning%20about%20sustainability.%20Bright%2C%20outdoor%20setting.%20Professional%20photography%20style&width=400&height=300&seq=7&orientation=landscape" alt="Story 6" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                <i class="ri-calendar-line"></i>
+                                <span>May 1, 2025</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>Environment</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Growing a Sustainable Future</h3>
+                            <p class="text-gray-600 mb-4">Our school garden project is teaching children about sustainability while providing fresh produce for the community.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">Read Full Story →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-12">
+                    <button class="px-8 py-3 bg-primary text-white text-lg hover:bg-primary/90 transition-colors !rounded-button">
+                        Load More Stories
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Get Involved</h2>
+                    <p class="text-gray-600 max-w-xl mx-auto">Join us in making a difference. Your support can change lives and create brighter futures for children in need.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Make a Donation</h3>
+                            <p class="text-gray-600 mb-4">Your contribution helps provide education, meals, and healthcare to children in need.</p>
+                            <a href="donate.html" class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button">
+                                Donate Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Spread the Word</h3>
+                            <p class="text-gray-600 mb-4">Help us reach more people by sharing our mission and stories on social media.</p>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                                    <i class="ri-facebook-fill text-primary"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                                    <i class="ri-twitter-fill text-primary"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                                    <i class="ri-instagram-fill text-primary"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                                    <i class="ri-linkedin-fill text-primary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Partner with Us</h3>
+                            <p class="text-gray-600 mb-4">We welcome partnerships with organizations and individuals who share our vision for a better world.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                Learn More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-primary/10 p-8 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-6 text-primary">Why Your Support Matters</h2>
+                        <p class="text-gray-700 mb-8">Every donation, share, and partnership helps us reach more children and communities in need. Your involvement means more opportunities, more hope, and a brighter future for the next generation.</p>
+                        <ul class="list-disc pl-6 text-lg text-gray-700 space-y-3">
+                            <li>Expanding access to quality education</li>
+                            <li>Providing nutritious meals and healthcare</li>
+                            <li>Empowering local communities</li>
+                            <li>Creating safe and inspiring environments</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="https://readdy.ai/api/search-image?query=Happy%20children%20smiling%20and%20playing%20together%20in%20a%20safe%20school%20yard%2C%20sunny%20day%2C%20diverse%20group%2C%20hopeful%20atmosphere&width=500&height=350" alt="Happy children" class="rounded-lg shadow-md w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="h-8">
+                            <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                                <text x="320" y="65" font-family="Arial" font-size="40" fill="#FFFFFF" font-weight="bold">სიკეთის ქალაქი</text>
+                                <text x="470" y="65" font-family="Arial" font-size="45" fill="#FFFFFF" font-weight="bold">+</text>
+                            </svg>
+                        </div>
+                    </a>
+                    <p class="text-gray-400">Empowering children worldwide through education, healthcare, and opportunity.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="stories.html" class="text-gray-400 hover:text-white transition-colors">Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest news and impact stories.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 rounded-button text-white placeholder-gray-400 border-none">
+                        <button class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 სიკეთის ქალაქი. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

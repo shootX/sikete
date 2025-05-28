@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - სიკეთის ქალაქი +</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^='ri-'])::before { content: "\f3c2"; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E94E97',
+                        secondary: '#FF6B35'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="h-8">
+                        <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#E94E97" stroke-width="8" fill="none"/>
+                            <text x="320" y="65" font-family="Arial" font-size="40" fill="#FF6B35" font-weight="bold">სიკეთის ქალაქი</text>
+                            <text x="470" y="65" font-family="Arial" font-size="45" fill="#000000" font-weight="bold">+</text>
+                        </svg>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="about-us.html" class="text-gray-700 hover:text-primary transition-colors">About Us</a>
+                    <a href="stories.html" class="text-gray-700 hover:text-primary transition-colors">Stories</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                
+                <a href="donate.html" class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button">
+                    Donate Now
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-[72px]">
+        <section class="relative h-[400px] flex items-center justify-center bg-primary/10">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl font-bold text-primary mb-4">About სიკეთის ქალაქი +</h1>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">We are dedicated to empowering children and communities through education, healthcare, and opportunity. Learn more about our mission, vision, and the impact we create together.</p>
+            </div>
+        </section>
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+                        <p class="text-gray-600 mb-6">To provide every child with access to quality education, healthcare, and a safe environment, enabling them to reach their full potential and build a brighter future.</p>
+                        <h2 class="text-3xl font-bold mb-6">Our Vision</h2>
+                        <p class="text-gray-600">A world where every child, regardless of background, has the opportunity to thrive and contribute positively to society.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">Core Values</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li><i class="ri-heart-line text-primary mr-2"></i> Compassion & Empathy</li>
+                            <li><i class="ri-team-line text-primary mr-2"></i> Community & Collaboration</li>
+                            <li><i class="ri-lightbulb-flash-line text-primary mr-2"></i> Innovation & Opportunity</li>
+                            <li><i class="ri-shield-check-line text-primary mr-2"></i> Safety & Trust</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our passionate team is committed to making a difference in the lives of children and communities worldwide.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg p-8 shadow-sm text-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Shota Ochkhvirkia</h3>
+                        <p class="text-primary font-medium mb-2">Founder & Director</p>
+                        <p class="text-gray-600">Visionary leader dedicated to empowering youth and building strong communities.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-sm text-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Nino Beridze</h3>
+                        <p class="text-primary font-medium mb-2">Programs Manager</p>
+                        <p class="text-gray-600">Passionate about creating educational opportunities for every child.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-sm text-center">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Giorgi Kapanadze</h3>
+                        <p class="text-primary font-medium mb-2">Community Outreach</p>
+                        <p class="text-gray-600">Connecting communities and building lasting partnerships for impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="h-8">
+                            <svg width="150" height="32" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50,80 L80,40 L110,80 L140,20 L170,80 L200,40 L230,80 L260,20 L290,80" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                                <text x="320" y="65" font-family="Arial" font-size="40" fill="#FFFFFF" font-weight="bold">სიკეთის ქალაქი</text>
+                                <text x="470" y="65" font-family="Arial" font-size="45" fill="#FFFFFF" font-weight="bold">+</text>
+                            </svg>
+                        </div>
+                    </a>
+                    <p class="text-gray-400">Empowering children worldwide through education, healthcare, and opportunity.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="stories.html" class="text-gray-400 hover:text-white transition-colors">Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest news and impact stories.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 rounded-button text-white placeholder-gray-400 border-none">
+                        <button class="px-6 py-2 bg-primary text-white hover:bg-primary/90 transition-colors !rounded-button whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 სიკეთის ქალაქი. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
